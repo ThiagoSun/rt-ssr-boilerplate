@@ -1,0 +1,45 @@
+{
+  "name": "nextjs_ssr_work",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "analyze": "BUNDLE_ANALYZE=both npm run build",
+    "deploy": "pm2 start ecosystem.config.js --env production"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-less": "^1.0.1",
+    "antd": "^3.19.6",
+    "autoprefixer": "^9.6.0",
+    "babel-plugin-import": "^1.12.0",
+    "babel-plugin-react-css-modules": "^5.2.6",
+    "compression": "^1.7.4",
+    "es6-promise": "^4.2.8",
+    "express": "^4.17.1",
+    "isomorphic-fetch": "^2.2.1",
+    "less": "^3.9.0",
+    "less-vars-to-js": "^1.3.0",
+    "moment": "^2.24.0",
+    "next": "^8.1.0",
+    "next-compose-plugins": "^2.2.0",
+    "null-loader": "^3.0.0",
+    "postcss-flexbugs-fixes": "^4.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@zeit/next-bundle-analyzer": "^0.1.2"
+  },
+  "browserslist": [
+    ">1%",
+    "last 4 versions",
+    "iOS >= 7",
+    "Android >= 4",
+    "Firefox >= 20",
+    "safari >= 6",
+    "not ie < 9"
+  ]
+}
